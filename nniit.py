@@ -36,7 +36,6 @@ def classify_question(question: str) -> QuestionOutput:
 
 
 # GET endpoint to return past questions
-@app.get("/questions")
 def get_questions():
     with open(DATA_FILE, "r") as f:
         return json.load(f)
